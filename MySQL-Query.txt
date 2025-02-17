@@ -13,3 +13,10 @@ CREATE TABLE bookings (
     status ENUM('Pending', 'Confirmed') DEFAULT 'Pending',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+
+
+
+
+Test

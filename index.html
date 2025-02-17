@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimla Luxury Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('shimla-hotel.jpg') no-repeat center center/cover;
+            height: 80vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        .rooms, .amenities, .contact {
+            padding: 50px;
+            text-align: center;
+        }
+        .room, .amenity {
+            margin: 20px;
+            display: inline-block;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        .room img, .amenity img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .room h3, .amenity h3 {
+            padding: 10px;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact button {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shimla Luxury Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="feature.html">Contact</a></li>
+				<li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#contact">Contact</a></li>
+				
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Shimla Luxury Hotel</h1>
+        <p>Experience the best hospitality in the heart of the Himalayas.</p>
+        <a href="#rooms" style="color: #fff; text-decoration: underline;">Book Now</a>
+    </section>
+
+    <section class="rooms" id="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room">
+            <img src="deluxe-room.jpg" alt="Deluxe Room">
+            <h3>Deluxe Room</h3>
+            <p>Starting from ₹5000/night</p>
+        </div>
+        <div class="room">
+            <img src="suite-room.jpg" alt="Suite Room">
+            <h3>Suite Room</h3>
+            <p>Starting from ₹8000/night</p>
+        </div>
+    </section>
+
+    <section class="amenities" id="amenities">
+        <h2>Amenities</h2>
+        <div class="amenity">
+            <img src="spa.jpg" alt="Spa">
+            <h3>Spa & Wellness</h3>
+        </div>
+        <div class="amenity">
+            <img src="restaurant.jpg" alt="Restaurant">
+            <h3>Multi-Cuisine Restaurant</h3>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; background: #333; color: white;">
+        © 2025 Shimla Luxury Hotel. All rights reserved.
+    </footer>
+</body>
+</html>

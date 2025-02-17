@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Form - Shimla Luxury Hotel</title>
+    <title>Book Your Stay - Shimla Luxury Hotel</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: #f9f9f9;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             text-align: center;
         }
         header {
@@ -17,46 +17,85 @@
             color: #fff;
             padding: 20px;
         }
-        form {
+        section {
+            padding: 50px;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
             max-width: 600px;
-            margin: auto;
-            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        input, select {
+        h2 {
+            margin-bottom: 20px;
+        }
+        input, select, button {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
             border-radius: 5px;
             border: 1px solid #ccc;
+            font-size: 16px;
         }
         button {
-            background: #333;
+            background-color: #333;
             color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
             cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Enter Your Details</h1>
+        <h1>Shimla Luxury Hotel</h1>
+        <nav>
+            <a href="index.html" style="color: #fff; text-decoration: none; margin: 0 10px;">Home</a>
+            <a href="booking-form.html" style="color: #fff; text-decoration: none; margin: 0 10px;">Book Now</a>
+        </nav>
     </header>
 
     <section>
-        <form action="booking-confirmation.html">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <input type="date" placeholder="Check-in Date" required>
-            <input type="date" placeholder="Check-out Date" required>
+        <h2>Book Your Room</h2>
+        <form action="booking-process.php" method="POST">
+            <!-- Guest Name -->
+            <label for="guest_name">Full Name:</label><br>
+            <input type="text" id="guest_name" name="guest_name" required><br>
+
+            <!-- Email -->
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <!-- Phone -->
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <!-- Room Type -->
+            <label for="room_type">Room Type:</label><br>
+            <select id="room_type" name="room_type" required>
+                <option value="Deluxe Room">Deluxe Room</option>
+                <option value="Suite Room">Suite Room</option>
+                <option value="Presidential Suite">Presidential Suite</option>
+            </select><br>
+
+            <!-- Check-in Date -->
+            <label for="checkin_date">Check-in Date:</label><br>
+            <input type="date" id="checkin_date" name="checkin_date" required><br>
+
+            <!-- Check-out Date -->
+            <label for="checkout_date">Check-out Date:</label><br>
+            <input type="date" id="checkout_date" name="checkout_date" required><br>
+
+            <!-- Submit Button -->
             <button type="submit">Confirm Booking</button>
         </form>
     </section>
 
-    <footer>
+    <footer style="background-color: #333; color: white; padding: 20px; text-align: center;">
         © 2025 Shimla Luxury Hotel. All rights reserved.
     </footer>
+
 </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Shimla Luxury Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f4f4f9;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 50px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background: #333;
+            color: #fff;
+        }
+        table tr:hover {
+            background: #f1f1f1;
+        }
+        .button {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard - Shimla Luxury Hotel</h1>
+        <nav>
+            <a href="index.html" style="color: #fff; text-decoration: none;">Home</a> |
+            <a href="admin-dashboard.html" style="color: #fff; text-decoration: none;">Admin Dashboard</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Check Bookings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Booking ID</th>
+                    <th>Guest Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Room Type</th>
+                    <th>Check-in</th>
+                    <th>Check-out</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>9876543210</td>
+                    <td>Deluxe Room</td>
+                    <td>2025-03-10</td>
+                    <td>2025-03-15</td>
+                    <td>
+                        <a href="#" class="button">View</a>
+                        <a href="#" class="button">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Jane Smith</td>
+                    <td>jane@example.com</td>
+                    <td>9123456789</td>
+                    <td>Suite Room</td>
+                    <td>2025-03-20</td>
+                    <td>2025-03-25</td>
+                    <td>
+                        <a href="#" class="button">View</a>
+                        <a href="#" class="button">Delete</a>
+                    </td>
+                </tr>
+                <!-- Add more bookings as needed -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; background: #333; color: white;">
+        © 2025 Shimla Luxury Hotel. All rights reserved.
+    </footer>
+</body>
+</html>

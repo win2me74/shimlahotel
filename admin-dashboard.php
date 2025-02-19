@@ -23,11 +23,12 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Shimla Luxury Hotel</title>
+    <title>Admin Dashboard - Shimla Luxury Hotel Booking</title>
 </head>
 <body>
     <h1>Admin Dashboard - View Bookings</h1>
-    <table border="1" cellpadding="10">
+    <h1> Booking Status </h1>
+        <table border="1" cellpadding="10">
         <tr>
             <th>Booking ID</th>
             <th>Guest Name</th>

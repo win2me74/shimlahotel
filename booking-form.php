@@ -67,7 +67,7 @@ $conn->close();
         <label for="checkout_date">Check-out Date:</label><br>
         <input type="date" id="checkout_date" name="checkout_date" required><br><br>
 
-        <button type="submit">Confirm Booking</button>
+        <button type="submit">Confirm Hotel and Room Booking</button>
     </form>
 </body>
 </html>

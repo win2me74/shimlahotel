@@ -4,10 +4,10 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "shimla_hotel";
-dbname = "shimla
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-conn = new mysqli(....)
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
